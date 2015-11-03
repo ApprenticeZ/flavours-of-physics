@@ -13,9 +13,9 @@ features = list(train.columns[1:-5]) # names of features
 
 print("Train a Logistic Regression model")
 logreg = linear_model.LogisticRegression(C=1e5)
-logreg.fit(train[features], train["signal"])
+logreg.fit_transform(train[features], train["signal"])
 
 # predict with test data
 test_probs = logreg.predict_proba(test[features])[:,1]
 submission = pd.DataFrame({"id": test["id"], "prediction": test_probs})
-submission.to_csv("../../submission/logreg_base.csv", index=False)
+submission.to_csv("../../submission/logreg_transform.csv", index=False)
