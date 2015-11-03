@@ -1,0 +1,12 @@
+# data files
+*.csv
+*.zip
+# images
+*.png
+# model
+*.model
+# documents
+document/*
+# project files
+*.iml
+.idea/*
