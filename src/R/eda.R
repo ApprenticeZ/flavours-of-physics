@@ -16,4 +16,4 @@ summary(train)
 ntrain <- apply(train, 2, featNorm)
 summary(ntrain)
 
-saveHist(ntrain,'./images')
+saveHist(ntrain,'./images/hist')
