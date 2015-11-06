@@ -10,3 +10,5 @@ document/*
 # project files
 *.iml
 .idea/*
+.Rhistory
+
